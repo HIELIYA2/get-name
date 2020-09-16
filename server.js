@@ -1,8 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const customerRoutes = require('./app/routes/customer');
-
 const app = express();
+const customerRoutes = require('./app/routes/customer');
+require('dotenv').config();
 
 // parse requests of content-type: application/json
 app.use(bodyParser.json());
